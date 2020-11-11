@@ -1,4 +1,4 @@
- .navbar{
+.navbar{
             border-bottom: 1px solid grey;
             border-top: 1px solid grey;
         }
@@ -77,6 +77,16 @@
             background-color: white;
         }
         #outputPanel{
-            background-color: antiquewhite;
+            
         }
-      
+        .editor{
+            float:left;
+            width: 50%;    
+        }
+        
+        #outputeditor{
+            background-color: #272822;
+            border-left: 1px solid grey;
+        }
+        
+    

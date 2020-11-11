@@ -13,10 +13,12 @@
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"><img src="images/logo.jpg" id="logo">HTML,CSS Simulator</a>
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+        <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" id="logo">HTML,CSS Simulator</a>
           <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
               <a class="nav-link toggleButton active"id="html" href="#">HTML <span class="sr-only">(current)</span></a>
@@ -25,39 +27,55 @@
               <a class="nav-link toggleButton active" id="output" href="#" tabindex="-1">Output</a>
             </div>
           </div>
+        </div>
     </nav>
     
     
    
    
     <div id="bodyContainer">
-        <textarea id="htmlPanel" class="panel"><p id="paragraph">Hey there this is an realtime text player</p>
+        <div id="htmleditor" class="editor">
+<textarea id="htmlPanel" class="panel"><p id="paragraph">Hey there this is an realtime code simulator</p>
 
 <p id="two">Try changing the css by clicking above or write some html code.</p>
 
 <h2>Try uncommenting the javascript and change the content Cheers!</h2>
         </textarea>
+        </div>
         
-        <textarea id="cssPanel" class="panel hidden ">#paragraph{
-        color: green;
-        font-style: italic;
-        font-size:40px;
+        <div id="csseditor" class="editor hidden">
+<textarea id="cssPanel" class="panel hidden ">#paragraph{
+    color: green;
+    font-style: italic;
+    font-size:40px;
 }
+    
 #two{
-        color: red;
+    color: yellow;
 }
+    
 h2{
-        color: green;
-        font-weight: bold;
+    color: cyan;
+    font-weight: bold;
 }
         </textarea>
+        </div>
         
-        <textarea id="javascriptPanel" class="panel hidden">//document.getElementById("paragraph").innerHTML = "Hello There";</textarea>
         
-        <iframe id="outputPanel" class="panel"></iframe>
+        <div id="javascripteditor" class="editor hidden">
+<textarea id="javascriptPanel" class="panel hidden">//document.getElementById("paragraph").innerHTML = "Hello There";</textarea>
+        </div>
+        
+        
+        
+        
+        <div id="outputeditor" class="editor">
+        <iframe id="outputPanel" class="editor"></iframe>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
     <script type="text/javascript" src="javascript/javascript.js"></script>
 </body>
 </html>
