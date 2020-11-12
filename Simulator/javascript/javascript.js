@@ -1,11 +1,19 @@
 var heditor = ace.edit("htmleditor");
             heditor.setTheme("ace/theme/monokai");
-            heditor.getSession().setMode("ace/mode/javascript");
+            //heditor.getSession().setMode("ace/mode/javascript");
             heditor.session.setOption("useWorker", false);
             heditor.setFontSize("14px");
             heditor.resize();
             heditor.setShowPrintMargin(false);
             heditor.getSession().setUseWrapMode(true);
+            ace.require("ace/ext/language_tools");
+            heditor.getSession().setMode("ace/mode/html");
+            heditor.setShowPrintMargin(false);
+            heditor.setOption("enableBasicAutocompletion", true);
+            heditor.setOption("enableLiveAutocompletion", true);
+            heditor.setOption("enableSnippets", true);
+           
+           
             
            
            
@@ -13,12 +21,16 @@ var heditor = ace.edit("htmleditor");
             
             var ceditor = ace.edit("csseditor");
             ceditor.setTheme("ace/theme/monokai");
-            ceditor.getSession().setMode("ace/mode/javascript");
+           // ceditor.getSession().setMode("ace/mode/javascript");
             ceditor.session.setOption("useWorker", false);
             ceditor.setFontSize("14px");
             ceditor.setShowPrintMargin(false);
             ceditor.getSession().setUseWrapMode(true);
             ceditor.getSession().setMode("ace/mode/css");
+            ceditor.setOption("enableBasicAutocompletion", true);
+            ceditor.setOption("enableLiveAutocompletion", true);
+            ceditor.setOption("enableSnippets", true);
+            
             
         
             var jeditor = ace.edit("javascripteditor");
@@ -28,6 +40,9 @@ var heditor = ace.edit("htmleditor");
             jeditor.session.setOption("useWorker", false);
             jeditor.setFontSize("14px");
             jeditor.getSession().setUseWrapMode(true);
+            jeditor.setOption("enableBasicAutocompletion", true);
+            jeditor.setOption("enableLiveAutocompletion", true);
+            jeditor.setOption("enableSnippets", true);
             
         
             function updateOutput(){
