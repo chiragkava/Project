@@ -1,0 +1,65 @@
+        html {
+            height: 100%;
+        }
+        body { 
+            height: 100%; display: flex;
+        }
+
+        .navbar{
+            background-color: #1A1D21;
+            border-bottom: 1px solid grey;
+            border-top: 1px solid grey;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        
+      
+        #header{
+            width:100%;
+            background-color: #EEEEEE;
+            padding: 5px;
+            height: 30px;
+        }
+        #logo{
+            float:left;
+            height: 35px;
+            width: 70px;
+            padding-right: 20px;
+            
+        }
+
+       .toggleButton:hover {
+            border-bottom:3px solid #2e71ff;
+        }
+        #buttonContainer{
+            width:300px;
+            margin: 0 auto;
+        }
+        .toggleButton{
+            padding: 4px;
+        }
+        
+        textarea{
+            border-top: none;
+            resize:none;
+            border-color:grey;
+        }
+        .editor{
+            border: 1px solid grey;
+        }
+        iframe{
+            border:none;
+            padding-left: 10px;
+            height: 100%;
+            width: 100%;
+        }
+        .row{
+            height: 45.7%;
+        }
+        
+        #outputeditor{    
+            background-color: #272822;
+            border-left: 1px solid grey;
+        }
+        
+    
