@@ -27,7 +27,7 @@ API / Framework Used
 * Responsive
 * User friendly
 
-###About
+### About
 * <a href="https://ace.c9.io/">Ace editor</a>
   * Ace is a standalone code editor written in JavaScript. The goal is to create a web-based code editor that matches and extends the features, usability, and performance of existing native editors such as TextMate, Vim, or Eclipse. It can be easily embedded in any web page and JavaScript application.
 * <a href=""> Bootstrap</a>
